@@ -31,7 +31,7 @@ export default {
 
             // 1.입력된 검색어를 가지고,
             const baseURL = 'https://www.googleapis.com/youtube/v3/search'; 
-            const API_KEY = vprocess.env.VUE_APP_YOUTUBE_API_KEY;
+            const API_KEY = process.env.VUE_APP_YOUTUBE_API_KEY;
             // 2. Youtube API에 요청을 보내어 
             axios.get(baseURL, {params: {
                 key: API_KEY,
